@@ -56,7 +56,7 @@ function countPizzasInToppings(pizzas) {
   return sortedToppings;
 }
 
-// to query data anywhere outside of a page. need to use a static query (queries that do not take variables)
+// to query data anywhere outside of a page (gatsby pages directory). need to use a static query (queries that do not take variables)
 export default function ToppingsFilter({ activeTopping }) {
   // Get a list of all the toppings
   const { toppings, pizzas } = useStaticQuery(graphql`
