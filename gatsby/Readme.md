@@ -1,1 +1,2 @@
 - https://sampleapis.com/
+- Gatsby `createPage` = Any context specified on `context: {....}` is automatically available to the page that is set to use/read that data.
