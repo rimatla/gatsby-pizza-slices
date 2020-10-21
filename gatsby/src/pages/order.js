@@ -66,6 +66,7 @@ export default function Order({ data }) {
               <div>
                 {['S', 'M', 'L'].map((size) => (
                   <button
+                    key={size}
                     type="button"
                     onClick={() =>
                       addToOrder({
