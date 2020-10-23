@@ -1,5 +1,6 @@
-- Start Sanit w/ `sanity init --reconfigure`
+- Start Sanity project w/ `sanity init --reconfigure`
 - To start dev environment: `npm start`
+- `http://localhost:3333`
 
 - Get Project ID on https://manage.sanity.io/
 - Go Api amd Generate A new Token (choose read only)
