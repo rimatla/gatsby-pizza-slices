@@ -16,6 +16,7 @@ export default function Order({ data }) {
   const { values, updateValue } = useForm({
     name: '',
     email: '',
+    repellent: '',
   });
 
   const {
@@ -58,6 +59,15 @@ export default function Order({ data }) {
               type="email"
               name="email"
               value={values.email}
+              onChange={updateValue}
+            />
+            {/* honey pot against bots */}
+            <input
+              id="repellent"
+              type="repellent"
+              name="repellent"
+              className="repellent"
+              value={values.repellent}
               onChange={updateValue}
             />
           </label>

@@ -42,6 +42,16 @@ function wait(ms = 0) {
 exports.handler = async (event, context) => {
   const body = JSON.parse(event.body);
   //   console.log(body);
+  // Check if they have filled out the honeypot
+  if (body.repellent) {
+    console.log('caught');
+    return {
+      statusCode: 400,
+      body: JSON.stringify({
+        message: 'You have been busted! Boop beep bop zzzzstt good bye 131313',
+      }),
+    };
+  }
 
   // Validate the data coming in is correct
   const requiredFields = ['email', 'name', 'order'];
@@ -63,7 +73,7 @@ exports.handler = async (event, context) => {
     return {
       statusCode: 400,
       body: JSON.stringify({
-        message: `Your Pizza Order is empty :(`,
+        message: `Your Pizza Order is empty. Please try again`,
       }),
     };
   }
