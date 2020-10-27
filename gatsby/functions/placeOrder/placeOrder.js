@@ -44,7 +44,7 @@ exports.handler = async (event, context) => {
   //   console.log(body);
   // Check if they have filled out the honeypot
   if (body.repellent) {
-    console.log('caught');
+    // console.log('caught');
     return {
       statusCode: 400,
       body: JSON.stringify({
