@@ -2,6 +2,19 @@ import { useState, useEffect } from 'react';
 
 const gql = String.raw;
 
+const deets = `
+    name
+    _id
+    image {
+      asset {
+        url
+        metadata {
+          lqip
+        }
+      }
+    }
+`;
+
 // custom hook to fetch the data we want from Sanity
 export default function useLatestData() {
   // hot slices
@@ -17,15 +30,16 @@ export default function useLatestData() {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
+        // reusability
         query: gql`
           query {
             StoreSettings(id: "downtown") {
               name
               slicemaster {
-                name
+                ${deets}
               }
               hotSlices {
-                name
+                ${deets}
               }
             }
           }
@@ -38,7 +52,8 @@ export default function useLatestData() {
         // set the data to state
         setHotSlices(res.data.StoreSettings.hotSlices);
         setSlicemasters(res.data.StoreSettings.slicemaster);
-      });
+      })
+      .catch((err) => console.log(err));
   }, []);
 
   return {

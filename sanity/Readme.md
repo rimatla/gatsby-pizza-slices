@@ -32,3 +32,8 @@
 - Add another url i.e. `http://localhost:8000` or `http://localhost:8888` to the _CORS Origins_ field
 - Wanna run on any localhosts? `http://localhost:*`
 - Choose Allow Credentials
+
+# Deploy and Build Sanity to Prod
+
+- `sanity deploy`
+- Choose a name

@@ -13,4 +13,9 @@
 - URL -> `http://localhost:8888/.netlify/functions/hello`
 
 # Email
+
 - https://ethereal.email/
+
+# Querying Sanity Directly
+
+- Notice the usage of `_id` on UseLatest.js
