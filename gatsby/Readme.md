@@ -19,3 +19,6 @@
 # Querying Sanity Directly
 
 - Notice the usage of `_id` on UseLatest.js
+
+# Build Gatsby Site to Prod
+-  `npm run build` 

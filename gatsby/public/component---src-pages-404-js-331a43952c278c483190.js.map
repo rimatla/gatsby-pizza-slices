@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/404.js"],"names":["FourOFourPAge"],"mappings":"2FAAA,wEAEe,SAASA,IACtB,OAAO","file":"component---src-pages-404-js-331a43952c278c483190.js","sourcesContent":["import React from 'react';\n\nexport default function FourOFourPAge() {\n  return <p>Page Not Found 😿</p>;\n}\n"],"sourceRoot":""}
