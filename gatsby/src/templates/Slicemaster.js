@@ -4,7 +4,7 @@ import Img from 'gatsby-image';
 import SEO from '../components/SEO';
 
 export default function SlicemasterPage({ data: { person } }) {
-  console.log(person.image.asset.fluid.src);
+  // console.log(person.image.asset.fluid.src);
 
   return (
     <>

@@ -32,6 +32,7 @@
 - Add another url i.e. `http://localhost:8000` or `http://localhost:8888` to the _CORS Origins_ field
 - Wanna run on any localhosts? `http://localhost:*`
 - Choose Allow Credentials
+- Add your netlify full url in there as well after deployment (don't need to allow credentials here)
 
 # Deploy and Build Sanity to Prod
 
